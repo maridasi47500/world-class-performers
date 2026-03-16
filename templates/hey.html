@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1># world-class-performers</h1>
+{% for x in users | reverse %}
+ <li>{{ x["first_name"]  }}</li>
+
+{% endfor %} 
+{% endblock %}
+{% block liens %}
+<a href="/">welcome</a>
+{% endblock %}
+<a href="/add_one_user"> add one user</a><a href="/add_one_gossip"> add one gossip</a><a href="/add_one_ooh_ad"> add one ooh_ad</a><a href="/add_one_own_cybersecurity"> add one own_cybersecurity</a>
